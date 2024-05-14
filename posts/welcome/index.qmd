@@ -2,7 +2,7 @@
 title: "Stuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy"
 author: "Mu He"
 date: "2024-05-07"
-categories: [reading]
+categories: [reading, statistics, 2024]
 image: "IMG_0477.JPG"
 bibliography: references.bib
 ---

@@ -2,7 +2,7 @@
 title: "Master Graduation Ceremony XJTLU 2024"
 author: "Mu He"
 date: "2024-04-26"
-categories: [XJTLU, Graduate]
+categories: [XJTLU, Graduate, 2024]
 image: "IMG_0717.jpg"
 ---
 

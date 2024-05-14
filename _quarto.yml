@@ -5,6 +5,9 @@ project:
 website:
   title: "blog"
   navbar:
+    left: 
+      - text: Home
+        href: https://hemu0626.github.io
     right:
       - about.qmd
       - icon: instagram

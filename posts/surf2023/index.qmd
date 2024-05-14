@@ -1,0 +1,14 @@
+---
+title: "Surf 2023"
+author: "Mu He"
+date: "2023-08-21"
+categories: [XJTLU, surf, 2023]
+image: "cardjiayi.jpg"
+---
+
+Surf 2023 圆满成功！ 又是贷款上班的一天！
+
+![庆祝SURF和快乐的暑假结束啦！](IMG_0725.JPG)
+
+
+![海报](IMG_surf23.JPG){width=500}

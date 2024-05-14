@@ -2,7 +2,7 @@
 title: "Graduation Ceremony 2023"
 author: "Mu He"
 date: "2023-07-20"
-categories: [XJTLU, Graduate]
+categories: [XJTLU, Graduate, 2023]
 image: "IMG_0719.JPG"
 ---
 
