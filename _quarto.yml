@@ -1,0 +1,18 @@
+project:
+  type: website
+
+website:
+  title: "blog"
+  navbar:
+    right:
+      - about.qmd
+      - icon: instagram
+        text: Instagram
+        href: https://www.instagram.com/muuu9312/
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: visual
+

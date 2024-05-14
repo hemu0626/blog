@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "blog",
+    "section": "",
+    "text": "Coffee as toast\n\n\n\n\n\n\n\nnews\n\n\nfood\n\n\nshanghai\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nStuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy\n\n\n\n\n\n\n\nreading\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nMaster Graduation Ceremony XJTLU 2024\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n\n\n\n\n\n\n\n\n\nApr 26, 2024\n\n\nMu He\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Stuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy",
+    "section": "",
+    "text": "I am reading (Efron and Hastie 2016) and try to reproduce the graph (Hinkley, David and Efron, Bradley 1977), this kind of confuse me, just make a note to update.\n\n\ncauchy.mle &lt;- function(x,start,eps=1.e-8,max.iter=50){\n  if (missing(start)) start &lt;- median(x)\n  theta &lt;- start\n  n &lt;- length(x)\n  score &lt;- sum(2*(x-theta)/(1+(x-theta)^2))\n  iter &lt;- 1\n  conv &lt;- T\n  while (abs(score)&gt;eps && iter&lt;=max.iter){\n    info &lt;- sum((2-2*(x-theta)^2)/(1+(x-theta)^2)^2)\n    theta &lt;- theta + score/info\n    iter &lt;- iter + 1\n    score &lt;- sum(2*(x-theta)/(1+(x-theta)^2))\n    score2&lt;-sum((2*(x-theta)/(1+(x-theta)^2))^2)\n  }\n  if (abs(score)&gt;eps) {\n    print(\"No Convergence\")\n    conv &lt;- F\n  }\n  loglik &lt;- -sum(log(1+(x-theta)^2))\n  info &lt;- sum((2-2*(x-theta)^2)/(1+(x-theta)^2)^2)\n  r &lt;- list(theta=theta,loglik=loglik,score=score,score2=score2,info=info,convergence=conv)\n  r\n}\nfirst &lt;- NULL\nsecond &lt;- NULL\nmle&lt;-c()\nfor(i in 1: 10000){\n x&lt;- rcauchy(20)\n r2 &lt;- cauchy.mle(x,start=median(x),max.iter=100)\n mle&lt;-c(mle,r2$theta)\n first &lt;- c(first,1/r2$score2)\n second&lt;-c(second,1/r2$info)\n}\n\nfirstqq&lt;-quantile(first, probs=seq(0.05,1, by=0.05))\nsecondqq&lt;-quantile(second, probs=seq(0.05,1, by=0.05))\nre&lt;-data.frame(mle,first,second)\nvar(mle[which(second&lt;secondqq[1])])\n\n[1] 5.699538e+17\n\n#second\n#theta=20\n#3integrate(function(x){(2*(x-theta)/(1+(x-theta)^2))^2*dcauchy(x,theta,1)},lower=-Inf, upper=Inf ,abs.tol=1.e-8)$value*20\n##mlevar&lt;-first^2*d\nqqplot(secondqq,firstqq,xlim=c(0.05,0.25),ylim=c(0.05,0.25))\nabline(0,1)\n\n\n\n#?abline\n#?qqplot\n\n\n\n\n\nReferences\n\nEfron, Bradley, and Trevor Hastie. 2016. “Computer Age Statistical Inference,” July. https://doi.org/10.1017/cbo9781316576533.\n\n\nHinkley, David, and Efron, Bradley. 1977. “Conditional Variance of the Maximum Likelihood Estimator.” https://conservancy.umn.edu/items/08292fb8-0422-46a2-9fcd-8a5d8bd4b743."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Just some meme"
+  },
+  {
+    "objectID": "posts/welcome/index.html#references",
+    "href": "posts/welcome/index.html#references",
+    "title": "blog",
+    "section": "References",
+    "text": "References\n(Efron and Hastie 2016)"
+  },
+  {
+    "objectID": "posts/he0512/index.html",
+    "href": "posts/he0512/index.html",
+    "title": "Coffee as toast",
+    "section": "",
+    "text": "Meet with old friends and enjoy the coffee as toasts. Thanks to treatment by couple of Dr. Ran and congratulations to Prof. He for his promotion at full professorship in July 1st.\n\nLunch at 望江阁, really nice view.\n何教授特意来上海参加自己博士生的婚礼，希望未来我也能邀请老师们来参加我的喜事。"
+  },
+  {
+    "objectID": "posts/graduate2024/index.html",
+    "href": "posts/graduate2024/index.html",
+    "title": "Master Graduation Ceremony XJTLU 2024",
+    "section": "",
+    "text": "Congratulations to MS. Lan Wu and MS. Yunpeng Zhao awarded M.Sc. Actuarial Science at XJTLU!"
+  }
+]
