@@ -1,0 +1,19 @@
+---
+title: "Graduation Ceremony 2023"
+author: "Mu He"
+date: "2023-07-20"
+categories: [XJTLU, Graduate]
+image: "IMG_0719.JPG"
+---
+
+第一次线下带fyp，心腹大患们毕业了，预祝同学们前程似锦！
+
+::: columns
+::: {.column width="50%"}
+<img src="IMG_0720.JPG" width="250"/>
+:::
+
+::: {.column width="50%"}
+<img src="IMG_0721.JPG" width="215"/>
+:::
+:::
