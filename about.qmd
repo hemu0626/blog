@@ -4,9 +4,9 @@ image: problog.jpg
 about:
   template: jolla
   links:
-    - icon: instagram
-      text: Instagram
-      href: https://www.instagram.com/muuu9312/
+   # - icon: instagram
+  #    text: Instagram
+  #    href: https://www.instagram.com/muuu9312/
     - icon: linkedin
       text: LinkedIn
       href: https://www.linkedin.com/in/mu-he-63463767/
