@@ -228,26 +228,28 @@ div.csl-indent {
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a> mle<span class="ot">&lt;-</span><span class="fu">c</span>(mle,r2<span class="sc">$</span>theta)</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a> first <span class="ot">&lt;-</span> <span class="fu">c</span>(first,<span class="dv">1</span><span class="sc">/</span>r2<span class="sc">$</span>score2)</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a> second<span class="ot">&lt;-</span><span class="fu">c</span>(second,<span class="dv">1</span><span class="sc">/</span>r2<span class="sc">$</span>info)</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>firstqq<span class="ot">&lt;-</span><span class="fu">quantile</span>(first, <span class="at">probs=</span><span class="fu">seq</span>(<span class="fl">0.05</span>,<span class="dv">1</span>, <span class="at">by=</span><span class="fl">0.05</span>))</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>secondqq<span class="ot">&lt;-</span><span class="fu">quantile</span>(second, <span class="at">probs=</span><span class="fu">seq</span>(<span class="fl">0.05</span>,<span class="dv">1</span>, <span class="at">by=</span><span class="fl">0.05</span>))</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>re<span class="ot">&lt;-</span><span class="fu">data.frame</span>(mle,first,second)</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">var</span>(mle[<span class="fu">which</span>(second<span class="sc">&lt;</span>secondqq[<span class="dv">1</span>])])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 6.135867e+17</code></pre>
+<pre><code>[1] "No Convergence"</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#second</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#theta=20</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co">#3integrate(function(x){(2*(x-theta)/(1+(x-theta)^2))^2*dcauchy(x,theta,1)},lower=-Inf, upper=Inf ,abs.tol=1.e-8)$value*20</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="do">##mlevar&lt;-first^2*d</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(secondqq,firstqq,<span class="at">xlim=</span><span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.25</span>),<span class="at">ylim=</span><span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.25</span>))</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="dv">0</span>,<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>firstqq<span class="ot">&lt;-</span><span class="fu">quantile</span>(first, <span class="at">probs=</span><span class="fu">seq</span>(<span class="fl">0.05</span>,<span class="dv">1</span>, <span class="at">by=</span><span class="fl">0.05</span>))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>secondqq<span class="ot">&lt;-</span><span class="fu">quantile</span>(second, <span class="at">probs=</span><span class="fu">seq</span>(<span class="fl">0.05</span>,<span class="dv">1</span>, <span class="at">by=</span><span class="fl">0.05</span>))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>re<span class="ot">&lt;-</span><span class="fu">data.frame</span>(mle,first,second)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">var</span>(mle[<span class="fu">which</span>(second<span class="sc">&lt;</span>secondqq[<span class="dv">1</span>])])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 6.789816e+17</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#second</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">#theta=20</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">#3integrate(function(x){(2*(x-theta)/(1+(x-theta)^2))^2*dcauchy(x,theta,1)},lower=-Inf, upper=Inf ,abs.tol=1.e-8)$value*20</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="do">##mlevar&lt;-first^2*d</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">qqplot</span>(secondqq,firstqq,<span class="at">xlim=</span><span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.25</span>),<span class="at">ylim=</span><span class="fu">c</span>(<span class="fl">0.05</span>,<span class="fl">0.25</span>))</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="dv">0</span>,<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#?abline</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">#?qqplot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#?abline</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">#?qqplot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
