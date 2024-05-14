@@ -3,7 +3,7 @@ title: "Stuck on Conditional Variance of the Maximum Likelihood Estimator for Ca
 author: "Mu He"
 date: "2024-05-07"
 categories: [reading, statistics, 2024]
-image: "IMG_0477.JPG"
+image: "IMG_0477.jpg"
 bibliography: references.bib
 ---
 
