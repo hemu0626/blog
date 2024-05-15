@@ -1,38 +1,17 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "blog",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Coffee as toast\n\n\n\n\n\n\n\nnews\n\n\nfood\n\n\nShanghai\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nStuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy\n\n\n\n\n\n\n\nreading\n\n\nstatistics\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nMaster Graduation Ceremony XJTLU 2024\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nApr 26, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSail to the world\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\nSail to the world\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMar 23, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSurf 2023\n\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2023\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nGraduation Ceremony 2023\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2023\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSurf 2022\n\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2022\n\n\nMu He\n\n\n\n\n\n\nNo matching items"
+    "text": "Just some meme"
   },
   {
     "objectID": "posts/he0512/index.html",
     "href": "posts/he0512/index.html",
     "title": "Coffee as toast",
     "section": "",
-    "text": "Meet with old friends and enjoy the coffee as toasts.\nThanks to treatment by Dr. Ran couple and congratulations to Prof. He for his promotion to full professorship on July 1st. Lunch at 望江阁, really nice view.\n何教授特意来上海参加自己博士生的婚礼!"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Stuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy",
-    "section": "",
-    "text": "I am reading (Efron and Hastie 2016) and try to reproduce the graph (Hinkley, David and Efron, Bradley 1977), this kind of confuse me, just make a note to update.\n\ncauchy.mle &lt;- function(x,start,eps=1.e-8,max.iter=50){\n  if (missing(start)) start &lt;- median(x)\n  theta &lt;- start\n  n &lt;- length(x)\n  score &lt;- sum(2*(x-theta)/(1+(x-theta)^2))\n  iter &lt;- 1\n  conv &lt;- T\n  while (abs(score)&gt;eps && iter&lt;=max.iter){\n    info &lt;- sum((2-2*(x-theta)^2)/(1+(x-theta)^2)^2)\n    theta &lt;- theta + score/info\n    iter &lt;- iter + 1\n    score &lt;- sum(2*(x-theta)/(1+(x-theta)^2))\n    score2&lt;-sum((2*(x-theta)/(1+(x-theta)^2))^2)\n  }\n  if (abs(score)&gt;eps) {\n    print(\"No Convergence\")\n    conv &lt;- F\n  }\n  loglik &lt;- -sum(log(1+(x-theta)^2))\n  info &lt;- sum((2-2*(x-theta)^2)/(1+(x-theta)^2)^2)\n  r &lt;- list(theta=theta,loglik=loglik,score=score,score2=score2,info=info,convergence=conv)\n  r\n}\nfirst &lt;- NULL\nsecond &lt;- NULL\nmle&lt;-c()\nfor(i in 1: 10000){\n x&lt;- rcauchy(20)\n r2 &lt;- cauchy.mle(x,start=median(x),max.iter=100)\n mle&lt;-c(mle,r2$theta)\n first &lt;- c(first,1/r2$score2)\n second&lt;-c(second,1/r2$info)\n}\n\n[1] \"No Convergence\"\n\nfirstqq&lt;-quantile(first, probs=seq(0.05,1, by=0.05))\nsecondqq&lt;-quantile(second, probs=seq(0.05,1, by=0.05))\nre&lt;-data.frame(mle,first,second)\nvar(mle[which(second&lt;secondqq[1])])\n\n[1] 7.524791e+17\n\n#second\n#theta=20\n#3integrate(function(x){(2*(x-theta)/(1+(x-theta)^2))^2*dcauchy(x,theta,1)},lower=-Inf, upper=Inf ,abs.tol=1.e-8)$value*20\n##mlevar&lt;-first^2*d\nqqplot(secondqq,firstqq,xlim=c(0.05,0.25),ylim=c(0.05,0.25))\nabline(0,1)\n\n\n\n#?abline\n#?qqplot\n\n\n\n\n\nReferences\n\nEfron, Bradley, and Trevor Hastie. 2016. “Computer Age Statistical Inference,” July. https://doi.org/10.1017/cbo9781316576533.\n\n\nHinkley, David, and Efron, Bradley. 1977. “Conditional Variance of the Maximum Likelihood Estimator.” https://conservancy.umn.edu/items/08292fb8-0422-46a2-9fcd-8a5d8bd4b743."
-  },
-  {
-    "objectID": "posts/graduate2024/index.html",
-    "href": "posts/graduate2024/index.html",
-    "title": "Master Graduation Ceremony XJTLU 2024",
-    "section": "",
-    "text": "Congratulations to MS. Lan Wu and MS. Yunpeng Zhao awarded M.Sc. Actuarial Science at XJTLU!\nCongratulations to MS. Chenxia Liu awarded M.Sc. Financial Mathematics at XJTLU!\n\n\n第一次收到学生的花，非常开心"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Just some meme"
+    "text": "Meet with old friends and enjoy the coffee as toasts.\nThanks to treatment by Dr. Ran couple and congratulations to Prof. He for his promotion to full professorship on July 1st. Lunch at 望江阁, really nice view."
   },
   {
     "objectID": "posts/graduate2023/index.html",
@@ -46,7 +25,14 @@
     "href": "posts/sailtoworld/index.html",
     "title": "Sail to the world",
     "section": "",
-    "text": "Every semester, SMP will orginaize students sharing session, with the help of DA, we successfully invited some of honor students to share their university life.\n\n\n\n\n\n\n\n有时候觉得学生太优秀，作为老师能力有限可能限制了学生发展，有开心，又有些愧疚。"
+    "text": "Every semester, SMP will orginaize students sharing session, with the help of DA, we successfully invited some of honor students to share their university life.\n\n\nMore than 200 students in SMP participate in the sharing session, I am delighted to see so many SMP students successfully applying to top-tier universities’ graduate programs worldwide. Among the numerous postgraduate programs, we also help students discern whether they are worth pursuing. It’s great to see everyone having their own ideas, persevering in walking their own paths, and becoming global citizens.\n\n\n\n\nHere is a summary for the past 14 years graduate from SMP at XJTLU:"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Stuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy",
+    "section": "",
+    "text": "I am reading (Efron and Hastie 2016) and try to reproduce the graph (Hinkley, David and Efron, Bradley 1977), this kind of confuse me, just make a note to update.\n\ncauchy.mle &lt;- function(x,start,eps=1.e-8,max.iter=50){\n  if (missing(start)) start &lt;- median(x)\n  theta &lt;- start\n  n &lt;- length(x)\n  score &lt;- sum(2*(x-theta)/(1+(x-theta)^2))\n  iter &lt;- 1\n  conv &lt;- T\n  while (abs(score)&gt;eps && iter&lt;=max.iter){\n    info &lt;- sum((2-2*(x-theta)^2)/(1+(x-theta)^2)^2)\n    theta &lt;- theta + score/info\n    iter &lt;- iter + 1\n    score &lt;- sum(2*(x-theta)/(1+(x-theta)^2))\n    score2&lt;-sum((2*(x-theta)/(1+(x-theta)^2))^2)\n  }\n  if (abs(score)&gt;eps) {\n    print(\"No Convergence\")\n    conv &lt;- F\n  }\n  loglik &lt;- -sum(log(1+(x-theta)^2))\n  info &lt;- sum((2-2*(x-theta)^2)/(1+(x-theta)^2)^2)\n  r &lt;- list(theta=theta,loglik=loglik,score=score,score2=score2,info=info,convergence=conv)\n  r\n}\nfirst &lt;- NULL\nsecond &lt;- NULL\nmle&lt;-c()\nfor(i in 1: 10000){\n x&lt;- rcauchy(20)\n r2 &lt;- cauchy.mle(x,start=median(x),max.iter=100)\n mle&lt;-c(mle,r2$theta)\n first &lt;- c(first,1/r2$score2)\n second&lt;-c(second,1/r2$info)\n}\n\n[1] \"No Convergence\"\n\nfirstqq&lt;-quantile(first, probs=seq(0.05,1, by=0.05))\nsecondqq&lt;-quantile(second, probs=seq(0.05,1, by=0.05))\nre&lt;-data.frame(mle,first,second)\nvar(mle[which(second&lt;secondqq[1])])\n\n[1] 4.463602e+17\n\n#second\n#theta=20\n#3integrate(function(x){(2*(x-theta)/(1+(x-theta)^2))^2*dcauchy(x,theta,1)},lower=-Inf, upper=Inf ,abs.tol=1.e-8)$value*20\n##mlevar&lt;-first^2*d\nqqplot(secondqq,firstqq,xlim=c(0.05,0.25),ylim=c(0.05,0.25))\nabline(0,1)\n\n\n\n#?abline\n#?qqplot\n\n\n\n\n\nReferences\n\nEfron, Bradley, and Trevor Hastie. 2016. “Computer Age Statistical Inference,” July. https://doi.org/10.1017/cbo9781316576533.\n\n\nHinkley, David, and Efron, Bradley. 1977. “Conditional Variance of the Maximum Likelihood Estimator.” https://conservancy.umn.edu/items/08292fb8-0422-46a2-9fcd-8a5d8bd4b743."
   },
   {
     "objectID": "posts/surf2023/index.html",
@@ -61,5 +47,19 @@
     "title": "Surf 2022",
     "section": "",
     "text": "第一次带Surf，磕磕绊绊还是把海报写好了！\n\n\n\n线上科研结束了！\n\n\n\n\n\n学生们很用心做的海报"
+  },
+  {
+    "objectID": "posts/graduate2024/index.html",
+    "href": "posts/graduate2024/index.html",
+    "title": "Master Graduation Ceremony XJTLU 2024",
+    "section": "",
+    "text": "Congratulations to MS. Lan Wu and MS. Yunpeng Zhao awarded M.Sc. Actuarial Science at XJTLU! Congratulations to MS. Chenxia Liu awarded M.Sc. Financial Mathematics at XJTLU!\n\n\nFor the very first time, I received some flower! Specially from one of my graduate students."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "blog",
+    "section": "",
+    "text": "Coffee as toast\n\n\n\n\n\n\n\nnews\n\n\nfood\n\n\nShanghai\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nStuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy\n\n\n\n\n\n\n\nreading\n\n\nstatistics\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nMaster Graduation Ceremony XJTLU 2024\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nApr 26, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSail to the world\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\nSail to the world\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMar 23, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSurf 2023\n\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2023\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nGraduation Ceremony 2023\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2023\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSurf 2022\n\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2022\n\n\nMu He\n\n\n\n\n\n\nNo matching items"
   }
 ]
