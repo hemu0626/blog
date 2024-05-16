@@ -60,6 +60,20 @@
     "href": "index.html",
     "title": "blog",
     "section": "",
-    "text": "Coffee as toast\n\n\n\n\n\n\n\nnews\n\n\nfood\n\n\nShanghai\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nStuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy\n\n\n\n\n\n\n\nreading\n\n\nstatistics\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nMaster Graduation Ceremony XJTLU 2024\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nApr 26, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSail to the world\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\nSail to the world\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMar 23, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSurf 2023\n\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2023\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nGraduation Ceremony 2023\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2023\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSurf 2022\n\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2022\n\n\nMu He\n\n\n\n\n\n\nNo matching items"
+    "text": "Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring\n\n\n\n\n\n\n\nreading\n\n\nstatistics\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nCoffee as toast\n\n\n\n\n\n\n\nnews\n\n\nfood\n\n\nShanghai\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 15, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nStuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy\n\n\n\n\n\n\n\nreading\n\n\nstatistics\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMay 7, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nMaster Graduation Ceremony XJTLU 2024\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nApr 26, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSail to the world\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\nSail to the world\n\n\n2024\n\n\n\n\n\n\n\n\n\n\n\nMar 23, 2024\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSurf 2023\n\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2023\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nGraduation Ceremony 2023\n\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2023\n\n\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\nMu He\n\n\n\n\n\n\n  \n\n\n\n\nSurf 2022\n\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2022\n\n\n\n\n\n\n\n\n\n\n\nAug 30, 2022\n\n\nMu He\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/exacthybridcensor/index.html",
+    "href": "posts/exacthybridcensor/index.html",
+    "title": "Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring",
+    "section": "",
+    "text": "The reading before reminds us the exact confidence bounds in hybrid censoring (Chen and Bhattacharyya 1987) , maybe we can compare the conditional variance here. Here we also include the discussion on (Balakrishnan and Kundu 2013)"
+  },
+  {
+    "objectID": "posts/exacthybridcensor/index.html#introduction",
+    "href": "posts/exacthybridcensor/index.html#introduction",
+    "title": "Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring",
+    "section": "Introduction",
+    "text": "Introduction\nDenote \\(D^*\\) and \\(D\\), the numbers of units that would fail before \\(T^*\\) and \\(T\\), respectively, and set\n\\[\n\\begin{align}\nS&=\\sum_{i=1}^{D^*}X_{i,n}+(n-D^*)T^* \\quad &D^* &gt;1 \\\\\n&=nT & D^*=0\n\\end{align}\n\\] which is called total time on test. Thus, the hybrid censored data from exponential distribution."
   }
 ]
