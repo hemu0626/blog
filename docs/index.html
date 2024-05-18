@@ -64,7 +64,35 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-memos .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-memos'] = new List('listing-memos', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-lifenews .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -77,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-lifenews'] = new List('listing-lifenews', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -118,26 +146,16 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="https://hemu0626.github.io" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://www.linkedin.com/in/mu-he-63463767/" rel="" target=""><i class="bi bi-linkedin" role="img">
-</i> 
- <span class="menu-text">LinkedIn</span></a>
-  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="https://github.com/hemu0626" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text">Github</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="https://space.bilibili.com/9475114" rel="" target=""><i class="bi bi-tv" role="img">
-</i> 
- <span class="menu-text">BiliBili</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
@@ -175,54 +193,60 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="reading-memos" class="level2">
+<h2 class="anchored" data-anchor-id="reading-memos">Reading Memos</h2>
+<div id="listing-memos" class="quarto-listing quarto-listing-container-table">
 
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+Date
+</th>
+<th>
+Title
+</th>
+<th>
+Author
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="reading,statistics,2024" data-listing-date-sort="1715702400000" data-listing-file-modified-sort="1716015236093" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">May 15, 2024</span>
+</td>
+<td>
+<a href="./research_memos/exacthybridcensor/index.html" class="title listing-title">Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring</a>
+</td>
+<td>
+<span class="listing-author">Mu He</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="reading,statistics,2024" data-listing-date-sort="1715011200000" data-listing-file-modified-sort="1716011253486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="Stuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy" data-listing-filename-sort="index.qmd">
+<td>
+<span class="listing-date">May 7, 2024</span>
+</td>
+<td>
+<a href="./research_memos/welcome/index.html" class="title listing-title">Stuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy</a>
+</td>
+<td>
+<span class="listing-author">Mu He</span>
+</td>
+</tr>
+</tbody>
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+</table>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="news" class="level2">
+<h2 class="anchored" data-anchor-id="news">News</h2>
+<div id="listing-lifenews" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="reading,statistics,2024" data-listing-date-sort="1715702400000" data-listing-file-modified-sort="1715838084287" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/exacthybridcensor/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
-</div>
-<div class="body">
-<a href="./posts/exacthybridcensor/index.html">
-<h3 class="no-anchor listing-title">
-Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('reading'); return false;">
-reading
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('statistics'); return false;">
-statistics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
-2024
-</div>
-</div>
-<a href="./posts/exacthybridcensor/index.html">
-<div class="listing-description">
-The reading before reminds us the exact confidence bounds in hybrid censoring <span class="citation" data-cites="chen1987">(Chen and Bhattacharyya 1987)</span> , maybe we can compare…<span class="citation" data-cites="balakrishnan2013"></span>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/exacthybridcensor/index.html">
-<div class="listing-date">
-May 15, 2024
-</div>
-<div class="listing-author">
-Mu He
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="news,food,Shanghai,2024" data-listing-date-sort="1715702400000" data-listing-file-modified-sort="1715782536689" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="news,food,Shanghai,2024" data-listing-date-sort="1715702400000" data-listing-file-modified-sort="1716011186125" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/he0512/index.html"> <img src="./posts/he0512/ranhe.jpg" class="thumbnail-image"> </a></p>
 </div>
@@ -251,7 +275,7 @@ Shanghai
 </div>
 <a href="./posts/he0512/index.html">
 <div class="listing-description">
-Meet with old friends and enjoy the coffee as toasts.
+Meet with old friends and enjoy the coffee as toasts. congratulations to Prof.&nbsp;He for his promotion to full professorship on July 1st.
 </div>
 </a>
 </div>
@@ -266,48 +290,7 @@ Mu He
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="reading,statistics,2024" data-listing-date-sort="1715011200000" data-listing-file-modified-sort="1715776973880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html"> <img src="./posts/welcome/IMG_0477.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/welcome/index.html">
-<h3 class="no-anchor listing-title">
-Stuck on Conditional Variance of the Maximum Likelihood Estimator for Cauchy
-</h3>
-<div class="listing-subtitle">
-
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('reading'); return false;">
-reading
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('statistics'); return false;">
-statistics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
-2024
-</div>
-</div>
-<a href="./posts/welcome/index.html">
-<div class="listing-description">
-I am reading <span class="citation" data-cites="efron2016">(Efron and Hastie 2016)</span> and try to reproduce the graph <span class="citation" data-cites="hinkleydavid1977">(Hinkley, David and Efron, Bradley 1977)</span>, this kind of confuse me, just make a note to update.
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html">
-<div class="listing-date">
-May 7, 2024
-</div>
-<div class="listing-author">
-Mu He
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="XJTLU,Graduate,2024" data-listing-date-sort="1714060800000" data-listing-file-modified-sort="1715772887535" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="XJTLU,Graduate,2024" data-listing-date-sort="1714060800000" data-listing-file-modified-sort="1715772887535" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/graduate2024/index.html"> <img src="./posts/graduate2024/IMG_0717.jpg" class="thumbnail-image"> </a></p>
 </div>
@@ -348,7 +331,7 @@ Mu He
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="XJTLU,Graduate,Sail to the world,2024" data-listing-date-sort="1711123200000" data-listing-file-modified-sort="1715773273509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="XJTLU,Graduate,Sail to the world,2024" data-listing-date-sort="1711123200000" data-listing-file-modified-sort="1715773273509" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/sailtoworld/index.html"> <img src="./posts/sailtoworld/IMG_2898.JPG" class="thumbnail-image"> </a></p>
 </div>
@@ -392,7 +375,7 @@ Mu He
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="XJTLU,surf,2023" data-listing-date-sort="1692547200000" data-listing-file-modified-sort="1715715905537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="XJTLU,surf,2023" data-listing-date-sort="1692547200000" data-listing-file-modified-sort="1715715905537" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/surf2023/index.html"> <img src="./posts/surf2023/cardjiayi.jpg" class="thumbnail-image"> </a></p>
 </div>
@@ -433,7 +416,7 @@ Mu He
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="XJTLU,Graduate,2023" data-listing-date-sort="1689782400000" data-listing-file-modified-sort="1715714297234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="4" data-categories="XJTLU,Graduate,2023" data-listing-date-sort="1689782400000" data-listing-file-modified-sort="1715714297234" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/graduate2023/index.html"> <img src="./posts/graduate2023/IMG_0719.JPG" class="thumbnail-image"> </a></p>
 </div>
@@ -474,7 +457,7 @@ Mu He
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="7" data-categories="XJTLU,surf,2022" data-listing-date-sort="1661788800000" data-listing-file-modified-sort="1715715803824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="quarto-post image-right" data-index="5" data-categories="XJTLU,surf,2022" data-listing-date-sort="1661788800000" data-listing-file-modified-sort="1715715803824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
 <div class="thumbnail">
 <p><a href="./posts/surf2022/index.html"> <p class="card-img-top"><img src="posts/surf2022/IMG_0727.JPG"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -519,7 +502,13 @@ Mu He
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

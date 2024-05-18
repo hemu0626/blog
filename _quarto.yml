@@ -8,17 +8,14 @@ website:
     left: 
       - text: Home
         href: https://hemu0626.github.io
-    right:
       - about.qmd
-      - icon: linkedin
-        text: LinkedIn
-        href: https://www.linkedin.com/in/mu-he-63463767/
+    right:
+      #- icon: linkedin
+      #  text: LinkedIn
+      #  href: https://www.linkedin.com/in/mu-he-63463767/
       - icon: github
         text: Github
         href: https://github.com/hemu0626
-      - icon: tv
-        text: BiliBili
-        href: https://space.bilibili.com/9475114
      # - icon: instagram
     #    text: Instagram
     #    href: https://www.instagram.com/muuu9312/

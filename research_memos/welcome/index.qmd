@@ -57,44 +57,4 @@ qqplot(secondqq,firstqq,xlim=c(0.05,0.25),ylim=c(0.05,0.25))
 abline(0,1)
 #?abline
 #?qqplot
-mle<-c()
-con <- NA
-all(con)
-k <- which(con==FALSE)
-mle[k]
-second[k]
-hist(second)
-
-firstqq<-quantile(first, probs=seq(0.05,1, by=0.05))
-secondqq<-quantile(second, probs=seq(0.05,1, by=0.05))
-re<-data.frame(mle,first,second)
-var(mle[which(second<secondqq[1])])
-k <- which(abs(second) > 1 )
-second[k]
-mle[k]
-var(mle[-k])
-
-hist(mle)
-k <- which(abs(mle) > 1)
-which(second<0)
-
-for (bk in seq(0,1,0.01)){
-  second < bk
-}
-
-cut(second,breaks=seq(-1,1,0.01))
-mean(mle[second < 0.18 & second>0.17]^2)
-var(mle[second < 0.18 & second>0.17])
-var(mle[second < 0.177 & second>0.173])
-var(mle[second < 0.2 & second>0.1])
-
-ct <- seq(0,1,0.1)
-vv <- c()
-for (i in 2:length(ct)){
-  if (i ==2 ){v <- var(mle[second <-ct[i] & abs(second) > ct[i-1]])}
-  else {v <- var(mle[second <-ct[i] & second > ct[i-1]])}
-  vv <- c(vv,v)
-}
-
-vv
 ```

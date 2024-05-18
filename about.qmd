@@ -7,12 +7,30 @@ about:
    # - icon: instagram
   #    text: Instagram
   #    href: https://www.instagram.com/muuu9312/
-    - icon: linkedin
-      text: LinkedIn
+    - icon: house
+      text: Profile
+      href: https://scholar.xjtlu.edu.cn/en/persons/MuHe
+    - icon: google
+      text: Google Scholar
       href: https://www.linkedin.com/in/mu-he-63463767/
     - icon: github
       text: Github
       href: https://github.com/hemu0626
+    - icon: tv
+      text: BiliBili
+      href: https://space.bilibili.com/9475114
 ---
 
-Just some meme
+I chose to become a instructor due to my passion for teaching and the joy of continual learning. In terms of research, I firmly believe that the less redundant and superficial theoretical work there is, the more the value of genuine research stands out. Biological applications of groundbreaking theories draws most of my interest.  
+
+One question annoyed me for long time: 'If I am not the greatest mind in mathematics, why should I continue to stay in the academic industry and what is the value of my work?'. Currently I have come to accept that I may be an ordinary person, a mediocre math teacher by living with the 'slogan'： 
+
+> 为往圣继绝学
+> To carry forward and perpetuate the noble learning of the past sages
+
+Thanks to Xi'an Jiaotong-Liverpool University, I can concentrate more on teaching and balace my life in research, teaching and family. I really like the philosophy here:
+
+> To cultivate lifelong learners and global citizens.
+
+
+
