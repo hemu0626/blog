@@ -2,8 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/research_memos/katago/index.html",
       "/research_memos/exacthybridcensor/index.html",
       "/research_memos/welcome/index.html",
+      "/posts/undergraduate2024/index.html",
       "/posts/he0512/index.html",
       "/posts/graduate2024/index.html",
       "/posts/sailtoworld/index.html",

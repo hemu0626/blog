@@ -1,0 +1,18 @@
+---
+title: "Katago "
+author: "Mu He"
+date: "2024-08-22"
+categories: [Go, Code, 2024]
+image: " "
+---
+
+#### Attempt to reproduce the code
+
+https://katagotraining.org/
+
+#### Installation
+
+```{r,eval=FALSE}
+py -m pip install -U katrain
+py -m katrain
+```
