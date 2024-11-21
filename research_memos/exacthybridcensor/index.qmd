@@ -20,8 +20,6 @@ f(x)=\frac{1}{\theta}\exp(-x/\theta), \quad x>0, \quad \theta>0,
 $$
 are placed for some life test, where the failed items are not replaces.
 
-Denote the ordered lifetimes of these items to be denoted by $$
-
 
 Denote $D^*$ and $D$, the numbers of units that would fail before $T^*$ and $T$, respectively, and set
 
@@ -36,6 +34,5 @@ which is called total time on test. Thus, the hybrid censored data from exponent
 
 ## Dicussion of $\hat{\theta}$
 
-> Lemma 2.1 [@chen1987] The conditional mgf of $\hat{\theta}$
-
+Here may be we can apply some new ideas.
 

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Mu He">
-<meta name="dcterms.date" content="2024-05-15">
+<meta name="dcterms.date" content="2024-08-18">
 
-<title>blog - Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring</title>
+<title>blog - Summer Camp 2024</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,27 +22,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -89,35 +69,6 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -125,7 +76,7 @@ window.Quarto = {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -162,84 +113,55 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Summer Camp 2024</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">XJTLU</div>
+                <div class="quarto-category">Seminar</div>
+                <div class="quarto-category">2024</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Mu He </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 18, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">reading</div>
-    <div class="quarto-category">statistics</div>
-    <div class="quarto-category">2024</div>
-  </div>
-  </div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Mu He </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">May 15, 2024</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<p>The reading before reminds us the exact confidence bounds in hybrid censoring <span class="citation" data-cites="chen1987">(<a href="#ref-chen1987" role="doc-biblioref">Chen and Bhattacharyya 1987</a>)</span> , maybe we can compare the conditional variance here. Here we also include the discussion on <span class="citation" data-cites="balakrishnan2013">(<a href="#ref-balakrishnan2013" role="doc-biblioref">Balakrishnan and Kundu 2013</a>)</span>.</p>
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<blockquote class="blockquote">
-<p>Type-I and Type-II censoring schemes are the two most common and popular censoring schemes. In Type-I censoring scheme, the experimental time is fixed, but the number of observed failures is a random variable. On the other hand, in Type-II censoring scheme, number of observed failures is fixed, but the experimental time is a random variable. The mixture of Type-I and Type-II censoring schemes is known as hybrid censoring scheme, and it can be described as follows. Consider the following life-testing experiment in which n units are placed on test. The lifetimes of the sample units are assumed to be independent and identically distributed (i.i.d.) random variables. Let the ordered lifetimes of these units be denoted by <span class="math inline">\(X_{1:n}, \cdots , X_{n:n}\)</span>, respectively. The test is terminated when a pre-fixed number, <span class="math inline">\(r &lt; n\)</span>, out of n items has failed, or when a pre-fixed time, <span class="math inline">\(T\)</span> , has been reached. In other words, the life-test is terminated at a random time <span class="math inline">\(T_∗ = min\{X_{r:n}, T \}\)</span>. It is also usually assumed that the failed units are not replaced in the experiment</p>
-</blockquote>
-<p>Suppose <span class="math inline">\(n\)</span> units i.i.d. exponential,</p>
-<p><span class="math display">\[
-f(x)=\frac{1}{\theta}\exp(-x/\theta), \quad x&gt;0, \quad \theta&gt;0,
-\]</span> are placed for some life test, where the failed items are not replaces.</p>
-<p>Denote <span class="math inline">\(D^*\)</span> and <span class="math inline">\(D\)</span>, the numbers of units that would fail before <span class="math inline">\(T^*\)</span> and <span class="math inline">\(T\)</span>, respectively, and set</p>
-<p><span class="math display">\[
-\begin{align}
-S&amp;=\sum_{i=1}^{D^*}X_{i,n}+(n-D^*)T^* \quad &amp;D^* &gt;1 \\
-&amp;=nT &amp; D^*=0
-\end{align}
-\]</span></p>
-<p>which is called total time on test. Thus, the hybrid censored data from exponential distribution.</p>
-</section>
-<section id="dicussion-of-hattheta" class="level2">
-<h2 class="anchored" data-anchor-id="dicussion-of-hattheta">Dicussion of <span class="math inline">\(\hat{\theta}\)</span></h2>
-<p>Here may be we can apply some new ideas.</p>
+<p>Thanks Dr.&nbsp;Ran for the wonderful summer module.</p>
 
 
 
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-balakrishnan2013" class="csl-entry" role="listitem">
-Balakrishnan, N, and Debasis Kundu. 2013. <span>“Hybrid Censoring: Models, Inferential Results and Applications.”</span> <em>Computational Statistics &amp; Data Analysis</em> 57 (1): 166–209.
-</div>
-<div id="ref-chen1987" class="csl-entry" role="listitem">
-Chen, Shu-Mei, and Gouri Bhattacharyya. 1987. <span>“Exact Confidence Bounds for an Exponential Parameter Under Hybrid Censoring.”</span> <em>Communications in Statistics-Theory and Methods</em> 16 (8): 2429–42.
-</div>
-</div></section></div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

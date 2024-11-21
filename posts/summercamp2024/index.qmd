@@ -1,0 +1,9 @@
+---
+title: "Summer Camp 2024"
+author: "Mu He"
+date: "2024-08-18"
+categories: [XJTLU, Seminar, 2024]
+image: "sumcamp2024.jpg"
+---
+
+Thanks Dr. Ran for the wonderful summer module. 

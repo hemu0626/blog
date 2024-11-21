@@ -74,7 +74,7 @@
     "href": "index.html#news",
     "title": "blog",
     "section": "News",
-    "text": "News\n\n\n\n\n\n\n\n\n\n\nGraduation Ceremony XJTLU 2024\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2024\n\n\n\n\n\n\n\n\n\nJul 30, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nCoffee as toast\n\n\n\n\n\n\nnews\n\n\nfood\n\n\nShanghai\n\n\n2024\n\n\n\n\n\n\n\n\n\nMay 15, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nMaster Graduation Ceremony XJTLU 2024\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2024\n\n\n\n\n\n\n\n\n\nApr 26, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nSail to the world\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\nSail to the world\n\n\n2024\n\n\n\n\n\n\n\n\n\nMar 23, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nSurf 2023\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2023\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nGraduation Ceremony 2023\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2023\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nSurf 2022\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2022\n\n\n\n\n\n\n\n\n\nAug 30, 2022\n\n\nMu He\n\n\n\n\n\n\nNo matching items"
+    "text": "News\n\n\n\n\n\n\n\n\n\n\nSummer Camp 2024\n\n\n\n\n\n\nXJTLU\n\n\nSeminar\n\n\n2024\n\n\n\n\n\n\n\n\n\nAug 18, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nThe Three Musketeers\n\n\n\n\n\n\nXJTLU\n\n\nPolyU\n\n\n2024\n\n\n\n\n\n\n\n\n\nJul 30, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nGraduation Ceremony XJTLU 2024\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2024\n\n\n\n\n\n\n\n\n\nJul 30, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nCoffee as toast\n\n\n\n\n\n\nnews\n\n\nfood\n\n\nShanghai\n\n\n2024\n\n\n\n\n\n\n\n\n\nMay 15, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nMaster Graduation Ceremony XJTLU 2024\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2024\n\n\n\n\n\n\n\n\n\nApr 26, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nSail to the world\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\nSail to the world\n\n\n2024\n\n\n\n\n\n\n\n\n\nMar 23, 2024\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nSurf 2023\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2023\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nGraduation Ceremony 2023\n\n\n\n\n\n\nXJTLU\n\n\nGraduate\n\n\n2023\n\n\n\n\n\n\n\n\n\nJul 20, 2023\n\n\nMu He\n\n\n\n\n\n\n\n\n\n\n\n\nSurf 2022\n\n\n\n\n\n\nXJTLU\n\n\nsurf\n\n\n2022\n\n\n\n\n\n\n\n\n\nAug 30, 2022\n\n\nMu He\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "research_memos/exacthybridcensor/index.html",
@@ -88,14 +88,14 @@
     "href": "research_memos/exacthybridcensor/index.html#introduction",
     "title": "Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring",
     "section": "Introduction",
-    "text": "Introduction\n\nType-I and Type-II censoring schemes are the two most common and popular censoring schemes. In Type-I censoring scheme, the experimental time is fixed, but the number of observed failures is a random variable. On the other hand, in Type-II censoring scheme, number of observed failures is fixed, but the experimental time is a random variable. The mixture of Type-I and Type-II censoring schemes is known as hybrid censoring scheme, and it can be described as follows. Consider the following life-testing experiment in which n units are placed on test. The lifetimes of the sample units are assumed to be independent and identically distributed (i.i.d.) random variables. Let the ordered lifetimes of these units be denoted by \\(X_{1:n}, \\cdots , X_{n:n}\\), respectively. The test is terminated when a pre-fixed number, \\(r &lt; n\\), out of n items has failed, or when a pre-fixed time, \\(T\\) , has been reached. In other words, the life-test is terminated at a random time \\(T_∗ = min\\{X_{r:n}, T \\}\\). It is also usually assumed that the failed units are not replaced in the experiment\n\nSuppose \\(n\\) units i.i.d. exponential,\n\\[\nf(x)=\\frac{1}{\\theta}\\exp(-x/\\theta), \\quad x&gt;0, \\quad \\theta&gt;0,\n\\] are placed for some life test, where the failed items are not replaces.\nDenote the ordered lifetimes of these items to be denoted by $$\nDenote \\(D^*\\) and \\(D\\), the numbers of units that would fail before \\(T^*\\) and \\(T\\), respectively, and set\n\\[\n\\begin{align}\nS&=\\sum_{i=1}^{D^*}X_{i,n}+(n-D^*)T^* \\quad &D^* &gt;1 \\\\\n&=nT & D^*=0\n\\end{align}\n\\]\nwhich is called total time on test. Thus, the hybrid censored data from exponential distribution."
+    "text": "Introduction\n\nType-I and Type-II censoring schemes are the two most common and popular censoring schemes. In Type-I censoring scheme, the experimental time is fixed, but the number of observed failures is a random variable. On the other hand, in Type-II censoring scheme, number of observed failures is fixed, but the experimental time is a random variable. The mixture of Type-I and Type-II censoring schemes is known as hybrid censoring scheme, and it can be described as follows. Consider the following life-testing experiment in which n units are placed on test. The lifetimes of the sample units are assumed to be independent and identically distributed (i.i.d.) random variables. Let the ordered lifetimes of these units be denoted by \\(X_{1:n}, \\cdots , X_{n:n}\\), respectively. The test is terminated when a pre-fixed number, \\(r &lt; n\\), out of n items has failed, or when a pre-fixed time, \\(T\\) , has been reached. In other words, the life-test is terminated at a random time \\(T_∗ = min\\{X_{r:n}, T \\}\\). It is also usually assumed that the failed units are not replaced in the experiment\n\nSuppose \\(n\\) units i.i.d. exponential,\n\\[\nf(x)=\\frac{1}{\\theta}\\exp(-x/\\theta), \\quad x&gt;0, \\quad \\theta&gt;0,\n\\] are placed for some life test, where the failed items are not replaces.\nDenote \\(D^*\\) and \\(D\\), the numbers of units that would fail before \\(T^*\\) and \\(T\\), respectively, and set\n\\[\n\\begin{align}\nS&=\\sum_{i=1}^{D^*}X_{i,n}+(n-D^*)T^* \\quad &D^* &gt;1 \\\\\n&=nT & D^*=0\n\\end{align}\n\\]\nwhich is called total time on test. Thus, the hybrid censored data from exponential distribution."
   },
   {
     "objectID": "research_memos/exacthybridcensor/index.html#dicussion-of-hattheta",
     "href": "research_memos/exacthybridcensor/index.html#dicussion-of-hattheta",
     "title": "Exact Confidence Bounds for an Exponential Parameter under Hybrid Censoring",
     "section": "Dicussion of \\(\\hat{\\theta}\\)",
-    "text": "Dicussion of \\(\\hat{\\theta}\\)\n\nLemma 2.1 (Chen and Bhattacharyya 1987) The conditional mgf of \\(\\hat{\\theta}\\)"
+    "text": "Dicussion of \\(\\hat{\\theta}\\)\nHere may be we can apply some new ideas."
   },
   {
     "objectID": "posts/undergraduate2024/index.html",
@@ -117,5 +117,26 @@
     "title": "Memo Katago",
     "section": "",
     "text": "Attempt to reproduce the code\nhttps://katagotraining.org/\n\n\nInstallation\n\n#sh\npy -m pip install -U katrain\npy -m katrain\n\n\n\nCode Clone\n\n#sh\ngit clone https://github.com/lightvector/KataGo.git\n\ncd KataGo\n\nnano src/main.cpp  # check main.cpp \n\n\n\nCheck Main\n\n#python\nimport os\nos.system(\"nano src/main.cpp\")"
+  },
+  {
+    "objectID": "posts/Gather2024/gather705.html",
+    "href": "posts/Gather2024/gather705.html",
+    "title": "The Three Musketeers",
+    "section": "",
+    "text": "The three musketeers from the 09, 11, and 12 classes of the Department of Applied Mathematics (AMA) at The Hong Kong Polytechnic University, who haven’t seen each other for a long time, are the only ones left in the academic industry. It’s a rare opportunity for them to gather together."
+  },
+  {
+    "objectID": "posts/Gather2024/index.html",
+    "href": "posts/Gather2024/index.html",
+    "title": "The Three Musketeers",
+    "section": "",
+    "text": "The three musketeers from the 09, 11, and 12 classes of the Department of Applied Mathematics (AMA) at The Hong Kong Polytechnic University, who haven’t seen each other for a long time, are the only ones left in the academic industry. It’s a rare opportunity for them to gather together."
+  },
+  {
+    "objectID": "posts/summercamp2024/index.html",
+    "href": "posts/summercamp2024/index.html",
+    "title": "Summer Camp 2024",
+    "section": "",
+    "text": "Thanks Dr. Ran for the wonderful summer module."
   }
 ]
