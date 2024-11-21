@@ -5,10 +5,7 @@ date: "2022-08-30"
 categories: [XJTLU, surf, 2022]
 ---
 
-第一次带Surf，磕磕绊绊还是把海报写好了！ 
+My first experience of supervising undergraduate research at Xi'an Jiaotong-Liverpool University has been very positive.
 
-![线上科研结束了！](IMG_0727.JPG)
+![](IMG_0726.JPG){width="300"}
 
-
-
-![学生们很用心做的海报](IMG_0726.JPG){width=500}

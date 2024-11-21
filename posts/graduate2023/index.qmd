@@ -6,14 +6,19 @@ categories: [XJTLU, Graduate, 2023]
 image: "IMG_0719.JPG"
 ---
 
-第一次线下带fyp，心腹大患们毕业了，预祝同学们前程似锦！
+Taking charge of the final year project offline for the first time, with my closest troubleshooters now graduated, I wish all my classmates a bright and promising future!
 
 ::: columns
-::: {.column width="50%"}
-<img src="IMG_0720.JPG" width="250"/>
+::: {.column width="60%"}
+<img src="IMG_0720.JPG" width="500"/>
 :::
 
-::: {.column width="50%"}
-<img src="IMG_0721.JPG" width="215"/>
+::: {.column width="10%"}
+:::
+
+::: {.column width="30%"}
+<img src="IMG_0721.JPG" width="160"/>
 :::
 :::
+
+They bought T-shirts with the words "trusted troublemakers" .

@@ -1,5 +1,5 @@
 ---
-title: "Katago "
+title: "Memo Katago "
 author: "Mu He"
 date: "2024-08-22"
 categories: [Go, Code, 2024]
@@ -12,7 +12,28 @@ https://katagotraining.org/
 
 #### Installation
 
-```{r,eval=FALSE}
+```{r, eval=FALSE}
+#sh
 py -m pip install -U katrain
 py -m katrain
 ```
+
+#### Code Clone
+
+```{r, eval=FALSE}
+#sh
+git clone https://github.com/lightvector/KataGo.git
+
+cd KataGo
+
+nano src/main.cpp  # check main.cpp 
+```
+
+#### Check Main
+
+```{r, eval=FALSE}
+#python
+import os
+os.system("nano src/main.cpp")
+```
+

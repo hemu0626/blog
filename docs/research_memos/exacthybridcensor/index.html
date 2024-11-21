@@ -208,20 +208,28 @@ window.Quarto = {
 <p>The reading before reminds us the exact confidence bounds in hybrid censoring <span class="citation" data-cites="chen1987">(<a href="#ref-chen1987" role="doc-biblioref">Chen and Bhattacharyya 1987</a>)</span> , maybe we can compare the conditional variance here. Here we also include the discussion on <span class="citation" data-cites="balakrishnan2013">(<a href="#ref-balakrishnan2013" role="doc-biblioref">Balakrishnan and Kundu 2013</a>)</span>.</p>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<blockquote class="blockquote">
+<p>Type-I and Type-II censoring schemes are the two most common and popular censoring schemes. In Type-I censoring scheme, the experimental time is fixed, but the number of observed failures is a random variable. On the other hand, in Type-II censoring scheme, number of observed failures is fixed, but the experimental time is a random variable. The mixture of Type-I and Type-II censoring schemes is known as hybrid censoring scheme, and it can be described as follows. Consider the following life-testing experiment in which n units are placed on test. The lifetimes of the sample units are assumed to be independent and identically distributed (i.i.d.) random variables. Let the ordered lifetimes of these units be denoted by <span class="math inline">\(X_{1:n}, \cdots , X_{n:n}\)</span>, respectively. The test is terminated when a pre-fixed number, <span class="math inline">\(r &lt; n\)</span>, out of n items has failed, or when a pre-fixed time, <span class="math inline">\(T\)</span> , has been reached. In other words, the life-test is terminated at a random time <span class="math inline">\(T_∗ = min\{X_{r:n}, T \}\)</span>. It is also usually assumed that the failed units are not replaced in the experiment</p>
+</blockquote>
+<p>Suppose <span class="math inline">\(n\)</span> units i.i.d. exponential,</p>
+<p><span class="math display">\[
+f(x)=\frac{1}{\theta}\exp(-x/\theta), \quad x&gt;0, \quad \theta&gt;0,
+\]</span> are placed for some life test, where the failed items are not replaces.</p>
+<p>Denote the ordered lifetimes of these items to be denoted by $$</p>
 <p>Denote <span class="math inline">\(D^*\)</span> and <span class="math inline">\(D\)</span>, the numbers of units that would fail before <span class="math inline">\(T^*\)</span> and <span class="math inline">\(T\)</span>, respectively, and set</p>
 <p><span class="math display">\[
 \begin{align}
 S&amp;=\sum_{i=1}^{D^*}X_{i,n}+(n-D^*)T^* \quad &amp;D^* &gt;1 \\
 &amp;=nT &amp; D^*=0
 \end{align}
-\]</span> which is called total time on test. Thus, the hybrid censored data from exponential distribution.</p>
+\]</span></p>
+<p>which is called total time on test. Thus, the hybrid censored data from exponential distribution.</p>
 </section>
 <section id="dicussion-of-hattheta" class="level2">
 <h2 class="anchored" data-anchor-id="dicussion-of-hattheta">Dicussion of <span class="math inline">\(\hat{\theta}\)</span></h2>
 <blockquote class="blockquote">
 <p>Lemma 2.1 <span class="citation" data-cites="chen1987">(<a href="#ref-chen1987" role="doc-biblioref">Chen and Bhattacharyya 1987</a>)</span> The conditional mgf of <span class="math inline">\(\hat{\theta}\)</span></p>
 </blockquote>
-<p>to be done</p>
 
 
 

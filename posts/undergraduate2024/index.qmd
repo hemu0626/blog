@@ -6,36 +6,48 @@ categories: [XJTLU, Graduate, 2024]
 image: "porf1.jpg"
 ---
 
-Congratulations to the students! 每个人都是我的代表作。
+Congratulations to the graduates 2024! 
 
 ::: columns
 ::: {.column width="50%"}
-<img src="yifan1.jpg" width="215"/>
+<img src="yifan1.jpg" width="300"/>
 
-Yifan Lu
 :::
 
 ::: {.column width="50%"}
-<img src="yifan2.jpg" width="215"/>
+<img src="yifan2.jpg" width="300"/>
 :::
 :::
-
-
 
 ::: columns
-::: {.column width="60%"}
-<img src="qianyu2.jpg" width="400"/>
+::: {.column width="50%"}
+<img src="qianyu2.jpg" width="300"/>
 
-Qianyu Wu
 :::
 
-::: {.column width="30%"}
+::: {.column width="50%"}
 <img src="qianyu3.jpg" width="300"/>
 :::
 :::
 
-<img src="jiayi1.jpg" width="500"/>
+::: columns
+::: {.column width="50%"}
+<img src="jiayi1.jpg" width="300"/>
 
-Jiayi Liu
+:::
 
-<img src="jiayi2.jpg" width="500"/>
+::: {.column width="50%"}
+<img src="jiayi2.jpg" width="300"/>
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+<img src="xiaoyang.jpg" width="300"/>
+
+:::
+
+::: {.column width="50%"}
+<img src="yuehan.jpg" width="300"/>
+:::
+:::
